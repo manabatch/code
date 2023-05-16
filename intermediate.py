@@ -27,8 +27,9 @@ def threeAddressCode(exp):
             st.append(char)
     while len(st) > 0:
         printCode(st, output, no)
+    return output
 exp = input('Enter Expression:')
 print(exp)
-print()
 print('Three Address Code:')
-threeAddressCode(exp)
+k=threeAddressCode(exp)
+print(k[0],k[1],k[2])
